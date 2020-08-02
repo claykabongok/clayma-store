@@ -1,0 +1,74 @@
+[
+  {
+    "productname": "Red shoes with bag",
+    "id": 11233,
+    "price": 850.8,
+    "discount": 68,
+    "color": "red",
+    "size": "7",
+    "product_image": "bag-boutique-business-336372.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": 11243,
+    "price": 950.8,
+    "discount": 35,
+    "color": "red",
+    "size": "7",
+    "product_image": "classic-clothes-commerce-298863.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": 11283,
+    "price": 1000.8,
+    "discount": 20,
+    "color": "red",
+    "size": "7",
+    "product_image": "thought-catalog-640705-unsplash.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": 11290,
+    "price": 1200.8,
+    "discount": 46,
+    "color": "red",
+    "size": "7",
+    "product_image": "blur-boutique-close-up-404171.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  }
+]

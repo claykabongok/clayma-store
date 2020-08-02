@@ -1,0 +1,323 @@
+[
+  {
+    "productname": "Red shoes with bag",
+    "id": "pi2d0PSaDaWORX8CVsSn",
+    "price": 5900.8,
+    "discount": 68,
+    "color": "red",
+
+    "size": ["small", "medium", "large", "xlarge"],
+    "product_status": "New",
+    "product_stock": 0,
+    "product_image": "fashion-high-heels-pumps-66856.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "1Ry57rlbWqqVGrgdngAO",
+    "price": 3000.0,
+    "discount": 50,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "Trending",
+    "product_stock": 15,
+    "product_image": "Elliebag.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "yc67LV4bfHfFtjZ68Dev",
+    "price": 2530.8,
+    "discount": 0,
+    "color": "red",
+    "size": ["small", "medium", "large", "xlarge"],
+    "product_status": "New",
+    "product_stock": 0,
+    "product_image": "CandyColorbag.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "EmE5N65NxF3hjWWn5pDH",
+    "price": 253.0,
+    "discount": 0,
+    "color": "red",
+    "size": ["small", "medium", "large", "xlarge"],
+    "product_status": "Trending",
+    "product_stock": 20,
+    "product_image": "beige-elegant-fashion-134064.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "XrWlzKlPxZsJHVs1CYwB",
+    "price": 253.0,
+    "discount": 100,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "New",
+    "product_stock": 90,
+    "product_image": "55-home_default.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "Bdd75giHSDGkx8WLTv9C",
+    "price": 253.0,
+    "discount": 32,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "Trending",
+    "product_stock": 40,
+    "product_image": "classic-clothes-commerce-298863.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "i662y8B2qA9kMtxYLGVL",
+    "price": 5600.9,
+    "discount": 87,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "New",
+    "product_stock": 250,
+    "product_image": "thought-catalog-640705-unsplash.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "ziu7CBnSnIE45WVqfuAp",
+    "price": 253.0,
+    "discount": 0,
+    "color": "red",
+    "size": ["small", "medium", "large", "xlarge"],
+    "product_status": "Trending",
+    "product_stock": 0,
+    "product_image": "blur-boutique-close-up-404171.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "2ve68tenY9TGZMPPxppP",
+    "price": 253.0,
+    "color": "red",
+    "discount": 0,
+    "size": ["small", "medium", "large", "xlarge"],
+    "product_status": "New",
+    "product_stock": 0,
+    "product_image": "bag-boutique-business-336372.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "cU6MpeQDfinCxyNkQAP0",
+    "price": 253.0,
+    "color": "red",
+    "discount": 5,
+    "size": ["small", "medium", "large", "xlarge"],
+    "product_status": "Trending",
+    "product_stock": 25,
+    "product_image": "classic-clothes-commerce-298863.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "xCS1eKOL0U5aExHwWBvp",
+    "price": 2530.0,
+    "discount": 9,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "New",
+    "product_stock": 250,
+    "product_image": "thought-catalog-640705-unsplash.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "TxJZS59SbUyWpXHHWAyG",
+    "price": 10000.0,
+    "discount": 50,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "Trending",
+    "product_stock": 25,
+    "product_image": "selective-focus-photo-of-man-wearing-black-turtleneck-top-837140.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "Bc3twiMjGk3s9uBAknRk",
+    "price": 253.0,
+    "discount": 45,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "New",
+    "product_stock": 250,
+    "product_image": "bag_222.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "wcZxUY5tCnZ2xjdxptyv",
+    "price": 253.0,
+    "discount": 20,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "Trending",
+    "product_stock": 250,
+    "product_image": "women-s-pink-sweatshirt-and-brown-plaid-skirt-794064.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "24nC01SAhuq1v0CAfCS1",
+    "price": 2530.0,
+    "discount": 0,
+    "color": "red",
+    "size": ["6", "7", "8", "9", "10", "11"],
+    "product_status": "New",
+    "product_stock": 80,
+    "product_image": "thought-catalog-640705-unsplash.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Red shoes with bag",
+    "id": "U65p8q2zqsahGWrDRCn2",
+    "price": 999.0,
+    "discount": 89,
+    "color": "red",
+    "size": ["small", "medium", "large", "xlarge"],
+    "product_status": "Trending",
+    "product_stock": 250,
+    "product_image": "smiling-girl-2995309.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "4.5 inch Gold Heel",
+      "Pointed Toe",
+      "Patent",
+      "Imported"
+    ]
+  }
+]

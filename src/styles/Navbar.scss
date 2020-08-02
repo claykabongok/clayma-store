@@ -1,0 +1,249 @@
+@import "colors";
+
+$a-tag-nav-log: "a, a:active, a:hover,a:visited,a:link";
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.container-nav {
+  width: 100%;
+  max-width: 117rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.menu-icon {
+  color: $white;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  z-index: 1500;
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.store-logo {
+  width: 5rem;
+  height: 5rem;
+  background-color: $lightThemeColor;
+  display: flex;
+  border-radius: 100%;
+  margin-right: 5rem;
+}
+
+.store-logo-icon {
+  margin: auto;
+  color: $white;
+  font-size: 3rem;
+}
+
+.navigation-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.navigation-list li {
+  line-height: 8rem;
+
+  position: relative;
+}
+
+.products-cat {
+  width: 20rem;
+  display: block;
+  position: absolute;
+  border-top: 3px solid $themeColor;
+  background-color: $blackColor;
+  z-index: 100;
+  top: 16rem;
+  transition: all 650ms ease;
+  opacity: 0;
+  visibility: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom-color: $themeColor;
+  }
+}
+.products-cat li {
+  line-height: 4rem;
+}
+.navigation-list li:hover > .products-cat {
+  top: 8rem;
+  opacity: 1;
+  visibility: visible;
+}
+.navigation-list a {
+  color: white;
+  display: block;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: color 650ms;
+}
+
+.navigation-list a:hover {
+  color: $themeColor;
+  text-decoration: none;
+}
+
+.store-cart-icon {
+  margin-left: 1rem;
+
+  font-size: 1.5rem;
+}
+
+.cart-btn {
+  padding: 0.5rem;
+  display: inline-block;
+  background-color: $themeColor;
+  border: 2px solid $themeColor;
+  border-radius: 5rem;
+  transition: background-color 650ms;
+
+  &:hover {
+    color: $themeColor;
+    background-color: rgba(20, 0, 0, 0.2);
+  }
+}
+
+li.nav-shopping-cart {
+  margin: auto 0 auto auto;
+  line-height: initial;
+}
+
+ul li a.cart .cart-basket {
+  font-size: 1rem;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: $themeColor;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  // header {
+  //   width: 100%;
+  //   position: absolute;
+  //   top: 10%;
+  //   left: 0;
+  // }
+  .navigation-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: initial;
+    display: none;
+    background-color: $blackColor;
+    overflow-y: scroll;
+    z-index: 1000;
+  }
+  .navigation-list > li {
+    line-height: 6rem;
+  }
+  .products-cat {
+    position: initial;
+    border: 3px solid transparent;
+    border-left-color: $themeColor;
+    margin-left: 1rem;
+    max-height: 0;
+  }
+  .products-cat::before {
+    display: none;
+  }
+  .navigation-list li:hover > .products-cat {
+    opacity: 1;
+    visibility: visible;
+    max-height: initial;
+  }
+
+  li.nav-shopping-cart {
+    margin: 0 auto 0 0;
+    line-height: initial;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon-close {
+    display: none;
+  }
+
+  nav.active .menu-icon-close {
+    display: block;
+  }
+
+  nav.active .menu-icon-bar {
+    display: none;
+  }
+
+  nav.active .navigation-list {
+    display: flex;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 600px) {
+  header {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    position: absolute;
+    top: 12%;
+    left: 0;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+  }
+}

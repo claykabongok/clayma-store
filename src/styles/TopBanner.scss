@@ -1,0 +1,14 @@
+@import "colors";
+
+.top-banner-container {
+  //   margin-bottom: 20px !important;
+  padding: 10px 20px;
+  //   background-color: rgb(18, 22, 18);
+  font-size: 12px;
+  color: $themeColor;
+  text-align: center;
+}
+//TODO: fix to banner make, by adding more space to header using meadia query
+.top-banner-icon {
+  margin-right: 5px;
+}
