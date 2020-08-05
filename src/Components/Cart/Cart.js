@@ -17,7 +17,7 @@ export default function Cart() {
       <TopBanner/>
       <NavBar />
       <HeroImage />
-      {/* <CartItems/> */}
+    
       <div className="container-cart-items">
       <h1 className="text-center">Items in your cart <span className="cart-header-number-of-items"> {cartTransaction.length>0 ? cartTransaction.length+" items": ""}</span></h1>
      

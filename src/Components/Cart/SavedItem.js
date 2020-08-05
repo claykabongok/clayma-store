@@ -113,7 +113,7 @@ export default function SavedItem(props) {
                     {" "}
                     <span className="product-price-whit-no-discount">
                       {
-                      // props.data.price
+                     
                       new Intl.NumberFormat('en-US', {style: 'currency', currency:'ZAR'}).format(  props.data.price) 
                       }
                     </span>

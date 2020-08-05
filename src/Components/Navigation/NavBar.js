@@ -36,23 +36,10 @@ export default function NavBar() {
                 onClick={(e) => handleToggle(e)}
               />
             </div>
-            {/* <a href="/" className="store-logo">
-             
-              <FontAwesomeIcon
-                icon={faShoppingBag}
-                className="store-logo-icon"
-              />
-            </a> */}
+           
 
             <ul className="navigation-list">
-              {/* <li>
-                <a href="/" className="store-logo">
-                  <FontAwesomeIcon
-                    icon={faShoppingBag}
-                    className="store-logo-icon"
-                  />
-                </a>
-              </li> */}
+           
               <li>
                 <a href="/">Home</a>
               </li>

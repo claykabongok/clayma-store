@@ -1,11 +1,10 @@
-import React,{useState, useContext} from "react";
+import React,{useContext} from "react";
 import { faCartPlus, faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {GlobalCartContext} from '../context/CartContext';
 import {  useToasts } from 'react-toast-notifications';
 
-// import Tooltip from 'react-bootstrap/Tooltip';
 
 
 export default function Product(props) {
@@ -15,7 +14,7 @@ export default function Product(props) {
   const {addItemTocart}= useContext(GlobalCartContext)
   
   function  handleAddToCart(data) {
-    //alert(data.productname+" Added to cart");
+   
     
     const newCartItem={
       productname: data.productname,
@@ -88,16 +87,13 @@ export default function Product(props) {
                       
                     new Intl.NumberFormat('en-US', {style: 'currency', currency:'ZAR'}).format( props.data.price -  (props.data.price * props.data.discount / 100)
                     )
-                    // Math.round(
-                    //   props.data.price -
-                    //     (props.data.price * props.data.discount) / 100
-                    // )
+                  
                   }
                   </span>{" "}
                   <span className="product-price-before-discount">
                     {" "}
                     {
-                    /* R{props.data.price} */
+                 
                     new Intl.NumberFormat('en-US', {style: 'currency', currency:'ZAR'}).format(  props.data.price) 
                     }
                            
@@ -111,7 +107,7 @@ export default function Product(props) {
                   {" "}
                   <span className="product-price-whit-no-discount">
                     {
-                    // props.data.price
+                 
                     new Intl.NumberFormat('en-US', {style: 'currency', currency:'ZAR'}).format(  props.data.price) 
                     }
                   </span>

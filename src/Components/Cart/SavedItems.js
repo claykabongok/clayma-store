@@ -16,7 +16,7 @@ export default function SavedItems() {
             <th scope="col">Item</th>
             <th scope="col">Description</th>
             <th scope="col">Price</th>
-            {/* <th scope="col">QTY</th> */}
+           
           </tr>
         </thead>
         <tbody>

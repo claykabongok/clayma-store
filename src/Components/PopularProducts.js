@@ -16,7 +16,7 @@ export default function PopularProducts() {
   const {addItemTocart}= useContext(GlobalCartContext)
   
   function  handleAddToCart(data) {
-    //alert(data.productname+" Added to cart");
+  
     
     const newCartItem={
       productname: data.productname,

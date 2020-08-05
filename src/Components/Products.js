@@ -1,4 +1,4 @@
-import React,{useContext} from 'react'
+import React from 'react'
 import data from '../data/Allproducts.json';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../styles/Products.scss';
