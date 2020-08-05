@@ -144,12 +144,13 @@ $a-tag-product: "a, a:active, a:hover,a:visited,a:link";
 .btn-cart-item-action-save-edit {
   border: none;
   background: transparent;
+  color: $colorGrey;
 
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 .btn-cart-item-action-add-tocart {
-  background: $themeColor;
+  background: $colorGrey;
 
   margin: 0 10px;
 
@@ -163,4 +164,28 @@ $a-tag-product: "a, a:active, a:hover,a:visited,a:link";
   width: 40%;
   font-size: medium;
   margin: 10px 0;
+}
+
+.cat-item-link-product-details {
+  text-decoration: none;
+  color: $colorGrey;
+  &:hover {
+    text-decoration: none;
+    color: $colorGrey;
+  }
+}
+
+.cart-empty-link {
+  text-decoration: none;
+  color: $colorGrey;
+  margin: 0 10px;
+  &:hover {
+    text-decoration: none;
+    color: $colorGrey;
+  }
+}
+
+.saved-items-list-empty {
+  text-align: center;
+  margin: 30px auto;
 }

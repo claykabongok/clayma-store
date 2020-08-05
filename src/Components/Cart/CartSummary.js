@@ -1,9 +1,31 @@
-import React from "react";
+import React,{useContext} from "react";
 import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {GlobalCartContext} from '../../context/CartContext';
 
 export default function CartSummary(props) {
+  const {cartTransaction}=useContext(GlobalCartContext);
+  let cartTotal=0;
+ 
+  let amountSaved=0;
+  cartTransaction.map((product) => (
+   
+    cartTotal+=  product.price*product.product_selected_qty
+     
+    ))
+
+    cartTransaction.map((product) => (
+   
+      amountSaved += (product.discount > 0 ? ((product.price * product.product_selected_qty)* product.discount / 100) : 0)
+       
+      ))
+  
+      
+
+    
+   
+    
   const estimatedShippingCost = 50;
   return (
     <div className="cart-items-summary">
@@ -17,7 +39,7 @@ export default function CartSummary(props) {
             {new Intl.NumberFormat("en-US", {
               style: "currency",
               currency: "ZAR",
-            }).format(props.total)}
+            }).format(cartTotal)}
           </h3>
         </div>
       </div>
@@ -45,23 +67,23 @@ export default function CartSummary(props) {
             {new Intl.NumberFormat("en-US", {
               style: "currency",
               currency: "ZAR",
-            }).format(props.savedAmount)}
+            }).format(amountSaved)}
           </h3>
         </div>
       </div>
 
       <div className="row">
-        <div className="col-lg-7">
+        <div className="col-lg-6">
           <h4>Total</h4>
         </div>
-        <div className="col-lg-5">
+        <div className="col-lg-6">
           <h3>
             <span className="product-price-after-discount">
               {new Intl.NumberFormat("en-US", {
                 style: "currency",
                 currency: "ZAR",
               }).format(
-                props.total + estimatedShippingCost - props.savedAmount
+                cartTotal + estimatedShippingCost - amountSaved
               )}
             </span>
           </h3>

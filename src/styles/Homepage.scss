@@ -14,7 +14,7 @@ $a-tag-homepage: "a, a:active, a:hover,a:visited,a:link";
   .hero-section-text {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -69,12 +69,6 @@ $a-tag-homepage: "a, a:active, a:hover,a:visited,a:link";
 @media only screen and (max-width: 600px) {
 }
 @media only screen and (min-width: 600px) {
-  header {
-    width: 100%;
-    position: absolute;
-    top: 20%;
-    left: 0;
-  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {

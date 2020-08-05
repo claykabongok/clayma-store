@@ -1,9 +1,45 @@
-import React from "react";
+import React,{useState, useContext} from "react";
 import { faCartPlus, faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {GlobalCartContext} from '../context/CartContext';
+import {  useToasts } from 'react-toast-notifications';
+
+// import Tooltip from 'react-bootstrap/Tooltip';
+
 
 export default function Product(props) {
+  const { addToast } = useToasts();
+  
+  
+  const {addItemTocart}= useContext(GlobalCartContext)
+  
+  function  handleAddToCart(data) {
+    //alert(data.productname+" Added to cart");
+    
+    const newCartItem={
+      productname: data.productname,
+      id: data.id,
+      price: data.price,
+      discount: data.discount,
+      color: data.color,
+      size: data.size,
+      selectedSize:data.size[0],
+      product_status: data.product_status,
+      product_stock: data.product_stock,
+      product_selected_qty:1,
+      product_image: data.product_image,
+      brand: data.brand,
+  
+      product_details: data.product_details
+
+
+    }
+    addItemTocart(newCartItem);
+    addToast(data.productname+" successfully added to your cart", { appearance: 'success', autoDismiss: true, })
+   
+  }
+  
   const productLevel = props.data.product_stock;
   let bannerStockLevel = "";
   let stockLevelMessage = "";
@@ -16,9 +52,8 @@ export default function Product(props) {
     bannerStockLevel = "product-banner-stock-level-out-of-stock";
     stockLevelMessage = `Out of  stock`;
   }
-  function handleAddToCart() {
-    alert("Added to cart");
-  }
+  
+ 
   return (
     <div className="col-lg-3 col-md-4 col-sm-6  col-product-container">
       <div className="card-product">
@@ -40,7 +75,8 @@ export default function Product(props) {
         </div>
         <div className={bannerStockLevel}>{stockLevelMessage}</div>
         <div className="card-body">
-          <h2 className="card-title">{props.data.productname}</h2>
+          <h2 className="card-title">
+            {props.data.productname}</h2>
           <div className="row">
             <div className="col-lg-7  col-md-6 col-sm-6">
               {props.data.discount > 0 ? (
@@ -86,10 +122,17 @@ export default function Product(props) {
               <div className="card-product-action-icons">
                 {props.data.product_stock >=1 ?
                 <span
+                  name="id"
+                  value={props.data.id}
                   className="card-product-action-cart-icon add-to-cart-icon"
-                  onClick={handleAddToCart}
+                  
+                  onClick={ () => handleAddToCart(props.data)}
                 >
-                  <FontAwesomeIcon icon={faCartPlus} />
+         
+                  <FontAwesomeIcon 
+                  icon={faCartPlus}
+                 
+                   />
                 </span>
                 :""}
 

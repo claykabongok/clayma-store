@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
   faBars,
   
@@ -8,10 +8,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {GlobalCartContext} from '../../context/CartContext';
+
 
 export default function NavBar() {
+  const {cartTransaction}=useContext(GlobalCartContext);
   const [toggleNav, setToggelNav] = useState(false);
-const [countCartItem/*, setCountCartItem*/] = useState(0);
+
   function handleToggle(e) {
     e.preventDefault();
     setToggelNav(!toggleNav);
@@ -62,18 +65,18 @@ const [countCartItem/*, setCountCartItem*/] = useState(0);
                 </a>
                 <ul className="products-cat">
                   <li>
-                    <a href="/">Men</a>
+                    <a href="/collections/men">Men</a>
                   </li>
                   <li>
-                    <a href="/">Woman</a>
+                    <a href="/collections/woman">Woman</a>
                   </li>
                   <li>
-                    <a href="/">Kids</a>
+                    <a href="/collections/kids">Kids</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="/">Collections</a>
+                <a href="/collections/all">Collections</a>
               </li>
               <li>
                 <a href="/">My Account</a>
@@ -88,13 +91,14 @@ const [countCartItem/*, setCountCartItem*/] = useState(0);
                     icon={faShoppingCart}
                     className="store-cart-icon"
                   />
-                  <span className="cart-basket d-flex align-items-center justify-content-center ">{countCartItem} </span>
+                  <span className="cart-basket d-flex align-items-center justify-content-center ">{cartTransaction.length} </span>
                 </a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
+    
     </div>
   );
 }

@@ -1,14 +1,31 @@
 [
   {
-    "productname": "Red shoes with bag",
+    "productname": "Flower Border Scarf",
+    "id": "2ve68tenY9TGZMPPxppP",
+    "price": 200.0,
+    "color": "X PINK",
+    "discount": 8,
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 30,
+    "product_selected_qty": 1,
+    "product_image": "Flower-Border-Scarf-X-PINK-.jpg",
+    "brand": "Gucci",
+
+    "product_details": ["100% polyester"]
+  },
+  {
+    "productname": "Red high heels ",
     "id": "pi2d0PSaDaWORX8CVsSn",
-    "price": 5900.8,
-    "discount": 68,
+    "price": 900.8,
+    "discount": 21,
     "color": "red",
 
     "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
     "product_status": "New",
-    "product_stock": 0,
+    "product_stock": 50,
     "product_image": "fashion-high-heels-pumps-66856.jpg",
     "brand": "Gucci",
 
@@ -21,14 +38,37 @@
     ]
   },
   {
-    "productname": "Red shoes with bag",
+    "productname": "Barre Stripe Shirt",
+    "id": "Bdd75giHSDGkx8WLTv9C",
+    "price": 900.0,
+    "discount": 12,
+    "color": "LILAC",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 40,
+    "product_selected_qty": 1,
+    "product_image": "Barre-Stripe-Shirt-LILAC.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Classic fit",
+      "Cold machine wash",
+      "Composition: 100% Cotton",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Classic Shopper",
     "id": "1Ry57rlbWqqVGrgdngAO",
-    "price": 3000.0,
+    "price": 900.0,
     "discount": 50,
     "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
     "product_status": "Trending",
     "product_stock": 15,
+    "product_selected_qty": 1,
     "product_image": "Elliebag.jpg",
     "brand": "Gucci",
 
@@ -40,15 +80,248 @@
       "Imported"
     ]
   },
+
   {
-    "productname": "Red shoes with bag",
-    "id": "yc67LV4bfHfFtjZ68Dev",
-    "price": 2530.8,
-    "discount": 0,
+    "productname": "Fur Trim Jacket",
+    "id": "EmE5N65NxF3hjWWn5pDH",
+    "price": 1200.0,
+    "discount": 46,
+    "color": "Navy",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 0,
+    "product_selected_qty": 1,
+    "product_image": "Fur-Trim-Jacket-NAVY.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Zip-through styling with snap closures",
+      "Faux shearling-lined hood",
+      "Faux fur trim at hood",
+      "Cotton lining",
+      "Soft touch wadding",
+      "Branded zip guard",
+      "Two front pockets with snap closures",
+      "Composition: 100% Polyester"
+    ]
+  },
+  {
+    "productname": "Polka Dot Tie",
+    "id": "XrWlzKlPxZsJHVs1CYwB",
+    "price": 700.0,
+    "discount": 30,
+    "color": "Navy",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 90,
+    "product_selected_qty": 1,
+    "product_image": "Polka-Dot-Tie-NAVY.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Blade width: 7.5cm",
+      "Length: 148cm",
+      "Pure silk",
+      "Handstitched",
+      "Composition: 100% Silk"
+    ]
+  },
+
+  {
+    "productname": "Funnel Neck Cardigan",
+    "id": "i662y8B2qA9kMtxYLGVL",
+    "price": 800.9,
+    "discount": 20,
+    "color": "MID GREY MARLE 1",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 250,
+    "product_selected_qty": 1,
+    "product_image": "Funnel-Neck-Cardigan-MID-GREY-MARLE.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      " Extrafine Merino wool blend",
+      "Hand wash",
+      "Composition: 55% Extrafine Merino Wool, 45% Cotton"
+    ]
+  },
+  {
+    "productname": "Zip-up Suede Jacket",
+    "id": "ziu7CBnSnIE45WVqfuAp",
+    "price": 3200.0,
+    "discount": 25,
+    "color": "TAUPE",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 45,
+    "product_selected_qty": 1,
+    "product_image": "Zip-up-Suede-Jacket-TAUPE.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Shell: 100% sheep leather",
+      "Body lining: 100% polyester",
+      " Sleeve lining: 100% polyester",
+      "Slim Fit",
+      "2 outer pockets",
+      " 2 inner pockets",
+      "  Zip detail"
+    ]
+  },
+
+  {
+    "productname": "Leather Biker Jacket",
+    "id": "cU6MpeQDfinCxyNkQAP0",
+    "price": 7500.0,
+    "color": "CAMEL",
+    "discount": 30,
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 25,
+    "product_selected_qty": 1,
+    "product_image": "Leather-Biker-Jacket-CAMEL.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      " Limited edition",
+      "True to size",
+      "Avoid contact with light coloured garments",
+      "Composition: 100% Leather"
+    ]
+  },
+  {
+    "productname": "Fine Pleat Dress",
+    "id": "xCS1eKOL0U5aExHwWBvp",
+    "price": 850.0,
+    "discount": 9,
+    "color": "brown",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 250,
+    "product_selected_qty": 1,
+    "product_image": "Fine-Pleat-Dress.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "This sophisticated sleeveless midi dress will effortlessly elevate your work wardrobe",
+      "Regular fit with comfortable elasticated waistline",
+      "Crew neck with hook and eye fastening; style closed or open as a V neck",
+      "Curved hem",
+      "Crafted from a lightweight, lustrous fabrication with fine pleat detailing through the bodice and skirt",
+      "Fully lined",
+      "Cold Hand Wash",
+      "Composition: 100% Polyester"
+    ]
+  },
+
+  {
+    "productname": "Jax Leopard Brim Hat",
+    "id": "Bc3twiMjGk3s9uBAknRk",
+    "price": 220.0,
+    "discount": 15,
+    "color": "Tan/Multi",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 10,
+    "product_selected_qty": 1,
+    "product_image": "leopard_hat.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available In Tan/Multi And Black",
+      "Medium Brim Size ",
+      "One Size Fits Most ",
+      " Leopard Print Strap Detail Along Brim ",
+      " 65% Cotton 35% Polyester ",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Distressed Slim Jean",
+    "id": "wcZxUY5tCnZ2xjdxptyv",
+    "price": 253.0,
+    "discount": 4,
+    "color": "blue",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 0,
+    "product_selected_qty": 1,
+    "product_image": "slim_jean.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      " Available In Dark Wash.",
+      "Button Closure",
+      "Zip Fly",
+      "5 Pocket Body",
+      "Slim Fit",
+      "Distressed",
+      "32\" Inseam",
+      "96% Cotton 3% Polyester 1% Spandex",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Jacquard Button Wrap Dress",
+    "id": "TxJZS59SbUyWpXHHWAyG",
+    "price": 300.0,
+    "discount": 10,
     "color": "red",
     "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 0,
+    "product_selected_qty": 1,
+    "product_image": "Jacquard-Button-Detail-Wrap-Dress.jpg",
+    "brand": "Gucci",
+
+    "product_details": [" 100% polyester", "Long sleeves with buttoned cuffs"]
+  },
+  {
+    "productname": "Meet At Midnight Fedora",
+    "id": "24nC01SAhuq1v0CAfCS1",
+    "price": 350.0,
+    "discount": 6,
+    "color": "Black",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
     "product_status": "New",
     "product_stock": 0,
+    "product_selected_qty": 1,
+    "product_image": "black_hat.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Available in black, Nude, Red, and Clear",
+      "Fedora Hat",
+      "Felt Material",
+      "Trim",
+      "  100% Polyester",
+
+      "Final Sale",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Classic Shopper bag ",
+    "id": "yc67LV4bfHfFtjZ68Dev",
+    "price": 2530.8,
+    "discount": 50,
+    "color": "red",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 5,
+    "product_selected_qty": 1,
     "product_image": "CandyColorbag.jpg",
     "brand": "Gucci",
 
@@ -61,263 +334,25 @@
     ]
   },
   {
-    "productname": "Red shoes with bag",
-    "id": "EmE5N65NxF3hjWWn5pDH",
-    "price": 253.0,
-    "discount": 0,
-    "color": "red",
-    "size": ["small", "medium", "large", "xlarge"],
-    "product_status": "Trending",
-    "product_stock": 20,
-    "product_image": "beige-elegant-fashion-134064.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "XrWlzKlPxZsJHVs1CYwB",
-    "price": 253.0,
-    "discount": 100,
-    "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
-    "product_status": "New",
-    "product_stock": 90,
-    "product_image": "55-home_default.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "Bdd75giHSDGkx8WLTv9C",
-    "price": 253.0,
-    "discount": 32,
-    "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
-    "product_status": "Trending",
-    "product_stock": 40,
-    "product_image": "classic-clothes-commerce-298863.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "i662y8B2qA9kMtxYLGVL",
-    "price": 5600.9,
-    "discount": 87,
-    "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
-    "product_status": "New",
-    "product_stock": 250,
-    "product_image": "thought-catalog-640705-unsplash.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "ziu7CBnSnIE45WVqfuAp",
-    "price": 253.0,
-    "discount": 0,
-    "color": "red",
-    "size": ["small", "medium", "large", "xlarge"],
-    "product_status": "Trending",
-    "product_stock": 0,
-    "product_image": "blur-boutique-close-up-404171.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "2ve68tenY9TGZMPPxppP",
-    "price": 253.0,
-    "color": "red",
-    "discount": 0,
-    "size": ["small", "medium", "large", "xlarge"],
-    "product_status": "New",
-    "product_stock": 0,
-    "product_image": "bag-boutique-business-336372.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "cU6MpeQDfinCxyNkQAP0",
-    "price": 253.0,
-    "color": "red",
-    "discount": 5,
-    "size": ["small", "medium", "large", "xlarge"],
-    "product_status": "Trending",
-    "product_stock": 25,
-    "product_image": "classic-clothes-commerce-298863.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "xCS1eKOL0U5aExHwWBvp",
-    "price": 2530.0,
-    "discount": 9,
-    "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
-    "product_status": "New",
-    "product_stock": 250,
-    "product_image": "thought-catalog-640705-unsplash.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "TxJZS59SbUyWpXHHWAyG",
-    "price": 10000.0,
-    "discount": 50,
-    "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
-    "product_status": "Trending",
-    "product_stock": 25,
-    "product_image": "selective-focus-photo-of-man-wearing-black-turtleneck-top-837140.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "Bc3twiMjGk3s9uBAknRk",
-    "price": 253.0,
-    "discount": 45,
-    "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
-    "product_status": "New",
-    "product_stock": 250,
-    "product_image": "bag_222.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "wcZxUY5tCnZ2xjdxptyv",
-    "price": 253.0,
-    "discount": 20,
-    "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
-    "product_status": "Trending",
-    "product_stock": 250,
-    "product_image": "women-s-pink-sweatshirt-and-brown-plaid-skirt-794064.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
-    "id": "24nC01SAhuq1v0CAfCS1",
-    "price": 2530.0,
-    "discount": 0,
-    "color": "red",
-    "size": ["6", "7", "8", "9", "10", "11"],
-    "product_status": "New",
-    "product_stock": 80,
-    "product_image": "thought-catalog-640705-unsplash.jpg",
-    "brand": "Gucci",
-
-    "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
-    ]
-  },
-  {
-    "productname": "Red shoes with bag",
+    "productname": "Studded Denim Face Mask",
     "id": "U65p8q2zqsahGWrDRCn2",
-    "price": 999.0,
-    "discount": 89,
-    "color": "red",
+    "price": 180.0,
+    "discount": 19,
+    "color": "Camouflage",
     "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
     "product_status": "Trending",
     "product_stock": 250,
-    "product_image": "smiling-girl-2995309.jpg",
+    "product_selected_qty": 1,
+    "product_image": "scuba_face_mask.jpg",
     "brand": "Gucci",
 
     "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
+      "Available In Denim, Black, Camouflage, And Black/White.",
+      "Studded Denim Face Mask",
+      "Reusable",
+      "Not Intended For Medical Use",
+      "Recommend Washing Mask After Use"
     ]
   }
 ]

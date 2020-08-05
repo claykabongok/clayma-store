@@ -1,12 +1,32 @@
 [
   {
-    "productname": "Red shoes with bag",
-    "id": 11233,
-    "price": 850.8,
-    "discount": 68,
+    "productname": "Flower Border Scarf",
+    "id": "2ve68tenY9TGZMPPxppP",
+    "price": 200.0,
+    "color": "X PINK",
+    "discount": 8,
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 30,
+    "product_selected_qty": 1,
+    "product_image": "Flower-Border-Scarf-X-PINK-.jpg",
+    "brand": "Gucci",
+
+    "product_details": ["100% polyester"]
+  },
+  {
+    "productname": "Red high heels ",
+    "id": "pi2d0PSaDaWORX8CVsSn",
+    "price": 900.8,
+    "discount": 21,
     "color": "red",
-    "size": "7",
-    "product_image": "bag-boutique-business-336372.jpg",
+
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 50,
+    "product_image": "fashion-high-heels-pumps-66856.jpg",
     "brand": "Gucci",
 
     "product_details": [
@@ -18,13 +38,38 @@
     ]
   },
   {
-    "productname": "Red shoes with bag",
-    "id": 11243,
-    "price": 950.8,
-    "discount": 35,
+    "productname": "Barre Stripe Shirt",
+    "id": "Bdd75giHSDGkx8WLTv9C",
+    "price": 900.0,
+    "discount": 12,
+    "color": "LILAC",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 40,
+    "product_selected_qty": 1,
+    "product_image": "Barre-Stripe-Shirt-LILAC.jpg",
+    "brand": "Gucci",
+
+    "product_details": [
+      "Classic fit",
+      "Cold machine wash",
+      "Composition: 100% Cotton",
+      "Imported"
+    ]
+  },
+  {
+    "productname": "Classic Shopper",
+    "id": "1Ry57rlbWqqVGrgdngAO",
+    "price": 900.0,
+    "discount": 50,
     "color": "red",
-    "size": "7",
-    "product_image": "classic-clothes-commerce-298863.jpg",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 15,
+    "product_selected_qty": 1,
+    "product_image": "Elliebag.jpg",
     "brand": "Gucci",
 
     "product_details": [
@@ -36,39 +81,47 @@
     ]
   },
   {
-    "productname": "Red shoes with bag",
-    "id": 11283,
-    "price": 1000.8,
+    "productname": "Funnel Neck Cardigan",
+    "id": "i662y8B2qA9kMtxYLGVL",
+    "price": 800.9,
     "discount": 20,
-    "color": "red",
-    "size": "7",
-    "product_image": "thought-catalog-640705-unsplash.jpg",
+    "color": "MID GREY MARLE 1",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "New",
+    "product_stock": 250,
+    "product_selected_qty": 1,
+    "product_image": "Funnel-Neck-Cardigan-MID-GREY-MARLE.jpg",
     "brand": "Gucci",
 
     "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
+      " Extrafine Merino wool blend",
+      "Hand wash",
+      "Composition: 55% Extrafine Merino Wool, 45% Cotton"
     ]
   },
   {
-    "productname": "Red shoes with bag",
-    "id": 11290,
-    "price": 1200.8,
-    "discount": 46,
-    "color": "red",
-    "size": "7",
-    "product_image": "blur-boutique-close-up-404171.jpg",
+    "productname": "Zip-up Suede Jacket",
+    "id": "ziu7CBnSnIE45WVqfuAp",
+    "price": 3200.0,
+    "discount": 25,
+    "color": "TAUPE",
+    "size": ["small", "medium", "large", "xlarge"],
+    "selected_size": "small",
+    "product_status": "Trending",
+    "product_stock": 45,
+    "product_selected_qty": 1,
+    "product_image": "Zip-up-Suede-Jacket-TAUPE.jpg",
     "brand": "Gucci",
 
     "product_details": [
-      "Available in black, Nude, Red, and Clear",
-      "4.5 inch Gold Heel",
-      "Pointed Toe",
-      "Patent",
-      "Imported"
+      "Shell: 100% sheep leather",
+      "Body lining: 100% polyester",
+      " Sleeve lining: 100% polyester",
+      "Slim Fit",
+      "2 outer pockets",
+      " 2 inner pockets",
+      "  Zip detail"
     ]
   }
 ]

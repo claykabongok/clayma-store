@@ -1,27 +1,83 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import { Link } from "react-router-dom";
+import {GlobalCartContext} from '../../context/CartContext';
+import {  useToasts } from 'react-toast-notifications';
 
 export default function SavedItem(props) {
+  const { addToast } = useToasts();
+  const {addItemTocart,removeItemFromSavedForLater}=useContext(GlobalCartContext);
+  function  removeFromSavedList(data) {
+   
+    removeItemFromSavedForLater(data.id);
+    addToast(props.data.productname+" has been  removed from the list", { appearance: 'success', autoDismiss: true, })
+   
+   
+  }
+
+  function  addToCart(data) {
+    const cartItem={
+      productname: data.productname,
+      id: data.id,
+      price: data.price,
+      discount: data.discount,
+      color: data.color,
+      size: data.size,
+      selectedSize:data.selected_size,
+      product_status: data.product_status,
+      product_stock: data.product_stock,
+      product_selected_qty:1,
+      product_image: data.product_image,
+      brand: data.brand,
+  
+      product_details: data.product_details
+
+
+    }
+    addItemTocart(cartItem);
+    
+    removeItemFromSavedForLater(data.id);
+    addToast(data.productname+" successfully added to your cart", { appearance: 'success', autoDismiss: true, })
+   
+
+   
+  }
+
     return (
         <>
         <tr className="row-cart-item ">
           <td className="row-cart-item-image-container">
             <div className="row-cart-item-image">
-              <img
+            <Link
+            to={`/catalog/item/${props.data.id}/${props.data.productname}`}
+            >
+        
+             <img
                 className="card-img-top"
                 src={require("../../assets/products/allproducts/" +
                   props.data.product_image)}
                 alt={props.data.product_image}
               />
+            </Link>
+             
             </div>
           </td>
           <td className="row-cart-item-description-container">
             <div className="row-cart-item-description">
-    <h2 className="product-name">{props.data.productname}</h2>
-              <h3 className="product-size">Size: {props.data.size[0]}</h3>
+            <Link className="cat-item-link-product-details"
+            to={`/catalog/item/${props.data.id}/${props.data.productname}`}
+            >
+            <h2 className="product-name">{props.data.productname}</h2>
+            </Link>
+   
+              <h3 className="product-size">Size: {props.data.selected_size}</h3>
               <h3 className="product-color">Color: {props.data.color}</h3>
-              <h3 className="product-quantity">QTY: 10</h3>
-              <button className="btn-cart-item-action-remove">Remove</button>
-               <button className="btn-cart-item-action-add-tocart">Add to Cart</button>
+    <h3 className="product-quantity">QTY: {props.data.product_selected_qty}</h3>
+              <button className="btn-cart-item-action-remove"
+              onClick={ () => removeFromSavedList(props.data)}
+              >Remove</button>
+               <button className="btn-cart-item-action-add-tocart"
+               onClick={ () => addToCart(props.data)}
+               >Add to Cart</button>
             
             </div>
           </td>

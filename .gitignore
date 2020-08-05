@@ -22,3 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 src/data/productid.txt
+/src/assets/images/unused/
+/src/assets/products/allproducts/unused/

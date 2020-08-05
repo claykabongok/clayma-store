@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext, useState} from "react";
 import {
   faChartBar,
   faCartPlus,
@@ -11,7 +11,13 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/ProductDetails.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import {GlobalCartContext} from '../context/CartContext';
+import {  useToasts } from 'react-toast-notifications';
 export default function ProductDetails(props) {
+  const { addToast } = useToasts();
+  const [prod_quantity,setProd_quantity]=useState(1)
+  const [prod_selected_size,setProd_prod_selected_size]=useState("")
+  
   let ProductDetails;
   let productDescription = [];
   let productSize = [];
@@ -31,6 +37,55 @@ export default function ProductDetails(props) {
     bannerStockLevel = "product-details-banner-stock-level-out-of-stock";
     stockLevelMessage = `Out of  stock`;
   }
+
+    
+  const {addItemTocart}= useContext(GlobalCartContext)
+  
+  function  handleAddToCart(data) {
+    //alert(data.productname+" Added to cart");
+    
+    const newCartItem={
+      productname: data.productname,
+      id: data.id,
+      price: data.price,
+      discount: data.discount,
+      color: data.color,
+      size: data.size,
+      selectedSize: prod_selected_size,
+      product_status: data.product_status,
+      product_stock: data.product_stock,
+      product_selected_qty:prod_quantity,
+      product_image: data.product_image,
+      brand: data.brand,
+  
+      product_details: data.product_details,
+      
+
+    }
+    addItemTocart(newCartItem);
+    addToast(data.productname+" has been saved for later shopping", { appearance: 'success', autoDismiss: true, })
+   
+    
+   
+  }
+  
+  function handleChange(event) {
+    
+    setProd_quantity(event.target.value)
+    //console.log(event.target.value)
+    
+  }
+
+
+function handleChangeSize(event) {
+    
+    setProd_prod_selected_size(event.target.value)
+    //console.log(event.target.value)
+    
+  }
+
+  
+   console.log(prod_quantity);
 
   const description = productDescription.map((desc) => (
     <h5  key={desc}>
@@ -124,10 +179,28 @@ export default function ProductDetails(props) {
             className="form-control product-size-option"
             name="size-product"
             id="size-product"
+            value={prod_selected_size} onChange={handleChangeSize}
+         
           >
             {product_size}
           </select>
           {/* <div className="mb-4 mt-4">{product_size}</div> */}
+          <h3>QTY:</h3>
+          <select 
+           className="form-control product-size-option"
+           value={prod_quantity} onChange={handleChange}>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          
+          </select>
 
           <h3>Product Details:</h3>
 
@@ -162,7 +235,9 @@ export default function ProductDetails(props) {
               <FontAwesomeIcon icon={faChartBar} /> Out of Stock
             </h2>
           ) : (
-            <button className="product-btn-add-to-cart shadow-none ">
+            <button className="product-btn-add-to-cart shadow-none "
+            onClick={ () => handleAddToCart(ProductDetails)}
+            >
               <FontAwesomeIcon
                 icon={faCartPlus}
                 className="product-btn-add-to-cart-icon"
