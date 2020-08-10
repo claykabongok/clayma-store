@@ -12,7 +12,7 @@ import {GlobalCartContext} from '../../context/CartContext';
 
 
 export default function NavBar() {
-  const {cartTransaction}=useContext(GlobalCartContext);
+  const {myShoppingCart}=useContext(GlobalCartContext);
   const [toggleNav, setToggelNav] = useState(false);
 
   function handleToggle(e) {
@@ -78,7 +78,7 @@ export default function NavBar() {
                     icon={faShoppingCart}
                     className="store-cart-icon"
                   />
-                  <span className="cart-basket d-flex align-items-center justify-content-center ">{cartTransaction.length} </span>
+                  <span className="cart-basket d-flex align-items-center justify-content-center ">{myShoppingCart.length} </span>
                 </a>
               </li>
             </ul>

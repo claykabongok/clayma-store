@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import {GlobalCartContext} from '../context/CartContext';
 import {  useToasts } from 'react-toast-notifications';
+
 export default function PopularProducts() {
   const { addToast } = useToasts();
   const {addItemTocart}= useContext(GlobalCartContext)
@@ -149,9 +150,12 @@ export default function PopularProducts() {
   return (
     <div className="container-popular-products">
       <h1>Customer Favorites</h1>
+   
       <Slider {...settings} className="popular-product-large-screen">
         {data}
       </Slider>
+    
+   
     </div>
   );
 }

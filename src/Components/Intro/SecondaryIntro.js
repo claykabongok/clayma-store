@@ -2,9 +2,11 @@ import React from "react";
 import "../../styles/SecondaryIntro.scss";
 import FirstImageIntro from '../../assets/images/clothing-store-984396_1920.jpg'
 import SecondImageIntro from '../../assets/images/hero_image_home_page.jpg';
+
 export default function SecondaryIntro() {
   return (
     <div>
+    
       <div className="row">
         <div className="col-lg-5 secondary-intro-fisrt-image-container">
         <div className="card-product card-secondary-intro">
@@ -39,6 +41,8 @@ export default function SecondaryIntro() {
 
         </div>
       </div>
+
+     
     </div>
   );
 }

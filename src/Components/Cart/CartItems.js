@@ -9,12 +9,12 @@ import { Link } from "react-router-dom";
 import { GlobalCartContext } from "../../context/CartContext";
 
 export default function CartItems() {
-  const { cartTransaction } = useContext(GlobalCartContext);
+  const { myShoppingCart } = useContext(GlobalCartContext);
 
   return (
    
     <div className="cart-items-products">
-      {cartTransaction.length > 0 ? (
+      {myShoppingCart.length > 0 ? (
         <table className="table table-borderless table-responsive">
           <thead className="header-cart-item">
             <tr>
@@ -25,7 +25,7 @@ export default function CartItems() {
             </tr>
           </thead>
           <tbody>
-            {cartTransaction.map((product) => (
+            {myShoppingCart.map((product) => (
               <CartItem data={product} key={product.id} />
             ))}
           </tbody>

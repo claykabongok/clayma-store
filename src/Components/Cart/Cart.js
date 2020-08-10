@@ -10,7 +10,7 @@ import {GlobalCartContext} from '../../context/CartContext';
 
 
 export default function Cart() {
-  const {cartTransaction}=useContext(GlobalCartContext);
+  const {myShoppingCart}=useContext(GlobalCartContext);
   return (
     <div>
 
@@ -19,7 +19,7 @@ export default function Cart() {
       <HeroImage />
     
       <div className="container-cart-items">
-      <h1 className="text-center">Items in your cart <span className="cart-header-number-of-items"> {cartTransaction.length>0 ? cartTransaction.length+" items": ""}</span></h1>
+      <h1 className="text-center">Items in your cart <span className="cart-header-number-of-items"> {myShoppingCart.length>0 ? myShoppingCart.length+" items": ""}</span></h1>
      
       
       
@@ -29,7 +29,7 @@ export default function Cart() {
         </div>
         <div className="col-lg-4 ">
           {
-            cartTransaction.length>0 ? 
+            myShoppingCart.length>0 ? 
             <CartSummary  />
             :
             ""

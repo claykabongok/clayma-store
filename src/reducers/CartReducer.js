@@ -10,13 +10,13 @@ export default (state, action)=>{
         case "ADD_ITEM_TO_CART":
             return{
                 ...state,
-                cartTransaction:[action.payload, ...state.cartTransaction],
+                myShoppingCart:[action.payload, ...state.myShoppingCart],
             };
             case "REMOVE_ITEM_FROM_CART":
                 return{
                     ...state,
-                    cartTransaction: state.cartTransaction.filter(
-                        (cartTransaction) => cartTransaction.id !== action.payload
+                    myShoppingCart: state.myShoppingCart.filter(
+                        (myShoppingCart) => myShoppingCart.id !== action.payload
                     )
 
                 };

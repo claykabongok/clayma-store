@@ -4,8 +4,7 @@ import { faCartPlus, faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {GlobalCartContext} from '../context/CartContext';
 import {  useToasts } from 'react-toast-notifications';
-
-
+import {v4 as uuidv4} from 'uuid';
 
 export default function Product(props) {
   const { addToast } = useToasts();
@@ -18,6 +17,7 @@ export default function Product(props) {
     
     const newCartItem={
       productname: data.productname,
+      cartItemId: uuidv4(),
       id: data.id,
       price: data.price,
       discount: data.discount,

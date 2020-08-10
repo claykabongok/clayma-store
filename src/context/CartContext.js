@@ -1,18 +1,20 @@
 import React, { createContext, useReducer, useEffect } from "react";
 import CartReducer from '../reducers/CartReducer';
 const initialState = {
-  cartTransaction: JSON.parse(localStorage.getItem("cartTransaction"))||[],
+  myShoppingCart: JSON.parse(localStorage.getItem("myShoppingCart"))||[],
   cartSavedForLater: JSON.parse(localStorage.getItem("cartSavedForLater"))||[]
 
 
 };
+
+
 
 export const GlobalCartContext=createContext(initialState);
 
 export const GlobalCartContextProvider=({children})=>{
     const [state, dispatch]=useReducer(CartReducer,initialState)
     useEffect(()=>{
-      localStorage.setItem("cartTransaction", JSON.stringify(state.cartTransaction));
+      localStorage.setItem("myShoppingCart", JSON.stringify(state.myShoppingCart));
       localStorage.setItem("cartSavedForLater", JSON.stringify(state.cartSavedForLater))
     });
     
@@ -49,7 +51,7 @@ export const GlobalCartContextProvider=({children})=>{
     }
     return(
         <GlobalCartContext.Provider value={{
-            cartTransaction: state.cartTransaction,
+          myShoppingCart: state.myShoppingCart,
             cartSavedForLater:state.cartSavedForLater,
             addItemTocart,
             removeItemFromCart,

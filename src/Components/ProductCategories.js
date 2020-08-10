@@ -3,10 +3,12 @@ import '../styles/ProductCategories.scss';
 import ShoppingWomen from '../assets/images/women-s-pink-sweatshirt-and-brown-plaid-skirt-794064.jpg';
 import ShoppingMen from '../assets/images/selective-focus-photo-of-man-wearing-black-turtleneck-top-837140.jpg';
 import ShoppingKids from '../assets/images/boy-wearing-blue-shirt-and-red-pants-sitting-on-table-3121075.jpg';
+
 export default function ProductCategories() {
   return (
     <div className="products-category-container">
-      <div className="row">
+    
+       <div className="row">
       <div className="col-lg-4 col-md-4 col-sm-6 ">
       <div className="card-product card-body-product-categories">
       <img className="card-img-top " 
@@ -69,33 +71,8 @@ export default function ProductCategories() {
 
 
       </div>
-       {/* <div className="row">
-        <div className="col-lg-4 products-category-men">
-        
-          <div className="products-cat-content">
-
-          <a href="/" className="btn-show-now-product-cat">Shop men</a>
-          
-          </div>
-            
-            
-          
-        </div>
-        <div className="col-lg-4 products-category-women">
-          <div className="products-cat-content">
-          <div>
-          <a href="/" className="btn-show-now-product-cat">Shop women</a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 products-category-kids">
-          
-          <div  className="products-cat-content">
-          <a href="/" className="btn-show-now-product-cat">Shop Kids</a>
-          
-          </div>
-        </div>
-      </div> */}
-    </div>
+    
+  
+         </div>
   );
 }

@@ -8,7 +8,7 @@ export default function SavedItem(props) {
   const {addItemTocart,removeItemFromSavedForLater}=useContext(GlobalCartContext);
   function  removeFromSavedList(data) {
    
-    removeItemFromSavedForLater(data.id);
+    removeItemFromSavedForLater(data.cartItemId);
     addToast(props.data.productname+" has been  removed from the list", { appearance: 'success', autoDismiss: true, })
    
    
@@ -17,6 +17,7 @@ export default function SavedItem(props) {
   function  addToCart(data) {
     const cartItem={
       productname: data.productname,
+      cartItemId:data.cartItemId,
       id: data.id,
       price: data.price,
       discount: data.discount,
@@ -35,7 +36,7 @@ export default function SavedItem(props) {
     }
     addItemTocart(cartItem);
     
-    removeItemFromSavedForLater(data.id);
+    removeItemFromSavedForLater(data.cartItemId,);
     addToast(data.productname+" successfully added to your cart", { appearance: 'success', autoDismiss: true, })
    
 

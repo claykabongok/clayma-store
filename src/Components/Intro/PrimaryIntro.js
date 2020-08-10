@@ -5,6 +5,7 @@ import "../../styles/PrimaryIntro.scss";
 export default function PrimaryIntro() {
   return (
     <div>
+    
       <div className="row mt-5">
         <div className="col-lg-4 primary-intro-fisrt-image">
           <div className="primary-intro-fisrt-image-text">
@@ -38,6 +39,8 @@ export default function PrimaryIntro() {
         </div>
         </div>
       </div>
+ 
+     
     </div>
   );
 }

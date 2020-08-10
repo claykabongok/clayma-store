@@ -24,3 +24,6 @@ yarn-error.log*
 src/data/productid.txt
 /src/assets/images/unused/
 /src/assets/products/allproducts/unused/
+src/Components/Intro/PrimaryIntro.js
+
+src/styles/PrimaryIntro.scss
