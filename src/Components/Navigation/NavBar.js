@@ -66,7 +66,7 @@ export default function NavBar() {
                 <a href="/collections/all">Collections</a>
               </li>
               <li>
-                <a href="/">My Account</a>
+                <a href="/search">Search</a>
               </li>
               <li>
                 <a href="/">About</a>

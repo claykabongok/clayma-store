@@ -20,6 +20,7 @@ export default function CartItem(props) {
     const savedItem = {
       productname: data.productname,
       id: data.id,
+      cartItemId:data.cartItemId,
       price: data.price,
       discount: data.discount,
       color: data.color,
@@ -34,7 +35,7 @@ export default function CartItem(props) {
       product_details: data.product_details,
     };
     saveItemforLater(savedItem);
-    removeItemFromCart(data.id);
+    removeItemFromCart(data.cartItemId);
     addToast(props.data.productname+" has been saved for later shopping", { appearance: 'success', autoDismiss: true, })
    
   }
@@ -70,7 +71,7 @@ export default function CartItem(props) {
           
             <button
               className="btn-cart-item-action-remove"
-              onClick={() => removeFromCart(props.data.id)}
+              onClick={() => removeFromCart(props.data.cartItemId)}
             >
               Remove
             </button>

@@ -8,6 +8,7 @@ import Cart from "./Components/Cart/Cart";
 import Catalog from "./Components/Catalog";
 import { GlobalCartContextProvider } from "./context/CartContext";
 import { ToastProvider } from 'react-toast-notifications';
+import SearchProducts from './Components/SearchProducts';
 function App() {
   return (
     <GlobalCartContextProvider>
@@ -16,7 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/shop" component={Shopping} />
-          {/* <Route exact path="/shop" component={Shopping}/> */}
+          <Route exact path="/search" component={SearchProducts}/>
           <Route exact path="/cart" component={Cart} />
           <Route
             exact

@@ -16,7 +16,7 @@ export default (state, action)=>{
                 return{
                     ...state,
                     myShoppingCart: state.myShoppingCart.filter(
-                        (myShoppingCart) => myShoppingCart.id !== action.payload
+                        (myShoppingCart) => myShoppingCart.cartItemId !== action.payload
                     )
 
                 };
@@ -24,7 +24,7 @@ export default (state, action)=>{
                     return{
                         ...state,
                         cartSavedForLater: state.cartSavedForLater.filter(
-                            (cartSavedForLater) => cartSavedForLater.id !== action.payload
+                            (cartSavedForLater) => cartSavedForLater.cartItemId !== action.payload
                         )
                         
                     };

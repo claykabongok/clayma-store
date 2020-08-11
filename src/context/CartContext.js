@@ -42,10 +42,10 @@ export const GlobalCartContextProvider=({children})=>{
       );
     };
 
-    const removeItemFromCart=(id)=>{
+    const removeItemFromCart=(cartItemId)=>{
       dispatch({
         type: "REMOVE_ITEM_FROM_CART",
-        payload: id,
+        payload: cartItemId,
 
       })
     }
