@@ -18,7 +18,7 @@ export default function SecondaryIntro() {
         <div className="card-body ">
         <div className="secondaryIntroHeader"> New Arrival</div>
       
-           <a href="/collections/top_rated" className="btn-show-now-secondary-intro">Shop Now</a>
+           <a href="/trend/New" className="btn-show-now-secondary-intro">Shop Now</a>
         </div>
        
       </div>
@@ -32,9 +32,9 @@ export default function SecondaryIntro() {
        alt="Products" />
      
         <div className="card-body">
-        <div className="secondaryIntroHeader">Top rated</div>
+        <div className="secondaryIntroHeader">Trending</div>
        
-           <a href="/collections/top_rated" className="btn-show-now-secondary-intro">Shop Now</a>
+           <a href="/trend/Trending" className="btn-show-now-secondary-intro">Shop Now</a>
         </div>
        
       </div>

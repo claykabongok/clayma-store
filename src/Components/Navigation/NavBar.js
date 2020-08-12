@@ -1,18 +1,16 @@
 import React, { useState, useContext } from "react";
 import {
   faBars,
-  
   faShoppingCart,
   faCaretDown,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {GlobalCartContext} from '../../context/CartContext';
-
+import { GlobalCartContext } from "../../context/CartContext";
 
 export default function NavBar() {
-  const {myShoppingCart}=useContext(GlobalCartContext);
+  const { myShoppingCart } = useContext(GlobalCartContext);
   const [toggleNav, setToggelNav] = useState(false);
 
   function handleToggle(e) {
@@ -36,10 +34,8 @@ export default function NavBar() {
                 onClick={(e) => handleToggle(e)}
               />
             </div>
-           
 
             <ul className="navigation-list">
-           
               <li>
                 <a href="/">Home</a>
               </li>
@@ -52,6 +48,9 @@ export default function NavBar() {
                 </a>
                 <ul className="products-cat">
                   <li>
+                    <a href="/collections">All</a>
+                  </li>
+                  <li>
                     <a href="/collections/men">Men</a>
                   </li>
                   <li>
@@ -63,27 +62,44 @@ export default function NavBar() {
                 </ul>
               </li>
               <li>
-                <a href="/collections">Collections</a>
+                <a href="/">
+                  Collections
+                  <i className="icon ">
+                    <FontAwesomeIcon icon={faCaretDown} />
+                  </i>
+                </a>
+                <ul className="products-cat">
+                  <li>
+                    <a href="/trend/New">New Arrival</a>
+                  </li>
+                  <li>
+                    <a href="/trend/Trending">Trending</a>
+                  </li>
+                </ul>
               </li>
+
               <li>
                 <a href="/search">Search</a>
               </li>
-            
-             
+
               <li className="nav-shopping-cart">
-                <a href="/cart" className="cart position-relative d-inline-flex">
+                <a
+                  href="/cart"
+                  className="cart position-relative d-inline-flex"
+                >
                   <FontAwesomeIcon
                     icon={faShoppingCart}
                     className="store-cart-icon"
                   />
-                  <span className="cart-basket d-flex align-items-center justify-content-center ">{myShoppingCart.length} </span>
+                  <span className="cart-basket d-flex align-items-center justify-content-center ">
+                    {myShoppingCart.length}{" "}
+                  </span>
                 </a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-    
     </div>
   );
 }
