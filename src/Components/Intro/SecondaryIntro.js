@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/SecondaryIntro.scss";
-import FirstImageIntro from '../../assets/images/clothing-store-984396_1920.jpg'
-import SecondImageIntro from '../../assets/images/hero_image_home_page.jpg';
+import FirstImageIntro from '../../assets/images/tshirt-2428521_1920.jpg'
+import SecondImageIntro from '../../assets/images/shopping-892811_1920.jpg';
 
 export default function SecondaryIntro() {
   return (

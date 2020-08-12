@@ -55,7 +55,7 @@ export default function NavBar() {
                     <a href="/collections/men">Men</a>
                   </li>
                   <li>
-                    <a href="/collections/woman">Woman</a>
+                    <a href="/collections/women">Women</a>
                   </li>
                   <li>
                     <a href="/collections/kids">Kids</a>
@@ -63,14 +63,12 @@ export default function NavBar() {
                 </ul>
               </li>
               <li>
-                <a href="/collections/all">Collections</a>
+                <a href="/collections">Collections</a>
               </li>
               <li>
                 <a href="/search">Search</a>
               </li>
-              <li>
-                <a href="/">About</a>
-              </li>
+            
              
               <li className="nav-shopping-cart">
                 <a href="/cart" className="cart position-relative d-inline-flex">

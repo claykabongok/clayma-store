@@ -9,6 +9,7 @@ import Catalog from "./Components/Catalog";
 import { GlobalCartContextProvider } from "./context/CartContext";
 import { ToastProvider } from 'react-toast-notifications';
 import SearchProducts from './Components/SearchProducts';
+import PageNotFound from './Components/PageNotFound';
 function App() {
   return (
     <GlobalCartContextProvider>
@@ -21,6 +22,11 @@ function App() {
           <Route exact path="/cart" component={Cart} />
           <Route
             exact
+            path="/collections"
+            component={Shopping}
+          />
+          <Route
+            exact
             path="/collections/:collectionname"
             component={Shopping}
           />
@@ -29,7 +35,7 @@ function App() {
             path="/catalog/item/:id/:productname"
             component={Catalog}
           />
-          {/* <Route component={PageNotFound} /> */}
+          <Route component={PageNotFound} />
         </Switch>
       </Router>
        </ToastProvider>

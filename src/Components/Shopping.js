@@ -9,14 +9,15 @@ export default function Shopping(props) {
   const collectionname = props.match.params.collectionname;
 
 
+
   return (
     <div>
       <TopBanner/>
       <NavBar />
-      {/* <HeroImage header={collectionname !== undefined ? collectionname: ""}/> */}
-      <HeroImage header={collectionname}/>
+   
+      <HeroImage />
       
-     <Products/>
+     <Products collectionname={collectionname}/>
 
       <Footer /> 
     </div>

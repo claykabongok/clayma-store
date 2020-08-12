@@ -14,32 +14,8 @@ $a-tag-product: "a, a:active, a:hover,a:visited,a:link";
 .header-products {
   text-align: center;
   margin-bottom: 20px;
+  color: $colorGrey;
 }
-// .product-card-action ul {
-//   margin: 0 auto;
-//   width: 90%;
-// }
-
-// .product-card-action li {
-//   display: inline-block;
-//   padding: 10px;
-// }
-
-// .product-card-action li a {
-//   display: block;
-//   height: 24px;
-//   line-height: 24px;
-//   text-align: center;
-//   width: 24px;
-//   /*margin: 2px;*/
-//   color: yellow;
-//   font-size: 14px;
-//   background: #fff;
-//   border-radius: 50px;
-//   -webkit-transition: 0.5s;
-//   -moz-transition: 0.5s;
-//   transition: 0.5s;
-// }
 
 .product-banner-new:before {
   content: "";
