@@ -1,6 +1,6 @@
 # `clayma-store`
 
-## [https://claymastore.netlify.app](Demo)
+## [Demo](https://claymastore.netlify.app)
 
 ## Usage
 
