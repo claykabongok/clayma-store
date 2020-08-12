@@ -8,7 +8,19 @@
   color: $themeColor;
   text-align: center;
 }
-//TODO: fix to banner make, by adding more space to header using meadia query
+
 .top-banner-icon {
   margin-right: 5px;
+}
+
+.shop_now_link_top_banner {
+  text-decoration: none;
+  color: $themeColor;
+  margin-left: 10px;
+  &:hover {
+    color: $white;
+    background-color: $themeColor;
+    text-decoration: none;
+    padding: 5px 5px;
+  }
 }

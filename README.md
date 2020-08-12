@@ -1,4 +1,7 @@
 # `clayma-store`
+
+## [https://claymastore.netlify.app](Demo)
+
 ## Usage
 
 - In the project directory, you can run: `yarn start`
