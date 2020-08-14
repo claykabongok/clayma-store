@@ -1,4 +1,6 @@
 @import "colors";
+@import "product_card";
+@import "product_price_status";
 
 .container-product-details {
   width: 90%;
@@ -21,75 +23,6 @@
   margin-bottom: 5px;
 }
 
-.product-details-banner-new:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  border-top: 40px solid $colorGreen;
-  border-right: 15px solid transparent;
-  position: absolute;
-  left: 100%;
-  top: 0px;
-}
-.product-details-banner-new {
-  position: absolute;
-  top: 0;
-  left: 3% auto;
-  color: #ffffff;
-  background-color: $colorGreen;
-  padding: 12px;
-  /*border-radius: 2px 2px;*/
-  font-size: 11px;
-}
-
-.product-details-banner-stock-level-low {
-  position: absolute;
-  top: 80%;
-  left: 3% auto;
-  color: #ffffff;
-  background-color: $colorLowStock;
-  padding: 12px;
-  /*border-radius: 2px 2px;*/
-  font-size: 13px;
-}
-
-.product-details-banner-stock-level-out-of-stock {
-  position: absolute;
-  top: 80%;
-  left: 2% auto;
-  color: #ffffff;
-  background-color: $themeColor;
-  padding: 12px;
-  /*border-radius: 2px 2px;*/
-  font-size: 13px;
-}
-
-.product-details-banner-trending:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  border-top: 45px solid $colorTrending;
-  border-right: 15px solid transparent;
-  position: absolute;
-  left: 100%;
-  top: 0px;
-}
-.product-details-banner-trending {
-  position: absolute;
-  top: 0;
-  left: 2% auto;
-  color: #ffffff;
-  background-color: $colorTrending;
-  border-color: $colorTrending;
-  padding: 12px;
-  // border-radius: 2px 2px;
-  font-size: 14px;
-}
-.product-details-price {
-  font-size: 16px;
-  color: $blackColor;
-}
-
 .product-btn-add-to-cart {
   background-color: $whiteSmoke;
   border: none;
@@ -100,21 +33,15 @@
   border-radius: 5rem;
 
   transition: background-color 650ms;
-}
-
-.product-btn-add-to-cart:hover {
-  color: $white;
-  background-color: $themeColor !important;
-  transition: background-color 650ms;
+  &:hover {
+    color: $white;
+    background-color: $themeColor !important;
+    transition: background-color 650ms;
+  }
 }
 
 .product-btn-add-to-cart-icon {
   margin-right: 5px;
-}
-
-.out-of-stock-notice {
-  text-align: center;
-  color: $themeColor;
 }
 
 .product-size-option {
@@ -122,25 +49,6 @@
   height: 30px;
 }
 
-.product-price-after-discount {
-  font-size: larger;
-  color: $colorGrey;
-}
-
 .cart-summary-amount-align-center {
   text-align: right;
-}
-.product-price-before-discount {
-  color: $colorGrey;
-  font-size: medium;
-  text-decoration: line-through;
-}
-
-.product-discount-rate {
-  color: $colorGreen;
-}
-
-.product-price-whit-no-discount {
-  font-size: larger;
-  color: $colorGrey;
 }

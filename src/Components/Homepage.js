@@ -1,42 +1,40 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "../styles/Homepage.scss";
-import NavBar from "./Navigation/NavBar";
-import Footer from "./Navigation/Footer";
-import SecondaryIntro from "./Intro/SecondaryIntro";
-import ProductCategories from "./ProductCategories";
-import PopularProducts from "./PopularProducts";
-import TopBanner from "./Navigation/TopBanner";
+
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import loadingIcon from "../assets/images/dashboardloader3.gif";
+
+const NavBar = React.lazy(() => import("./Navigation/NavBar"));
+const Footer = React.lazy(() => import("./Navigation/Footer"));
+const SecondaryIntro = React.lazy(() => import("./Intro/SecondaryIntro"));
+const ProductCategories = React.lazy(() => import("./ProductCategories"));
+const PopularProducts = React.lazy(() => import("./PopularProducts"));
+const TopBanner = React.lazy(() => import("./Navigation/TopBanner"));
+const HeroText = React.lazy(() => import("./Navigation/HeroText"));
 
 export default function () {
   return (
     <div>
-      <TopBanner />
-      <NavBar />
+      <Suspense
+        fallback={
+          <img src={loadingIcon} alt="loading" className="loadingIcon" />
+        }
+      >
+        <TopBanner />
+        <NavBar />
 
-      <div className="hero-section-homepage">
-        <div className="hero-section-text">
-          <h1 className="mb-4">
-            {" "}
-            <span>Clayma</span> store
-          </h1>
-          <h1>
-            The <span>home</span> of <span>Fashion</span>.
-          </h1>
-          <a href="/shop" className="shop-now-button">
-            Shop now
-          </a>
-        </div>
-      </div>
+        <HeroText />
 
-      <SecondaryIntro />
+        <SecondaryIntro />
 
-      <ProductCategories />
+        <ProductCategories />
 
-      <PopularProducts />
+        <PopularProducts />
 
-      <Footer />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

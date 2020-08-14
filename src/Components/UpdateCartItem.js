@@ -14,11 +14,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {GlobalCartContext} from '../context/CartContext';
 import {  useToasts } from 'react-toast-notifications';
 
-export default function ProductDetails(props) {
+export default function UpdateCartItem(props) {
 
-  const {action} =props;
-
-   
  
 
   const { addToast } = useToasts();
@@ -235,8 +232,6 @@ function handleChangeSize(event) {
               <FontAwesomeIcon icon={faChartBar} /> Out of Stock
             </h2>
           ) : (
-
-         
             <button className="product-btn-add-to-cart shadow-none "
             onClick={ () => handleAddToCart(ProductDetails)}
             >
@@ -244,7 +239,7 @@ function handleChangeSize(event) {
                 icon={faCartPlus}
                 className="product-btn-add-to-cart-icon"
               />
-              Add to Cart
+              Update  Cart
             </button>
           )}
         </div>

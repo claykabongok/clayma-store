@@ -5,11 +5,13 @@ import Footer from "./Navigation/Footer";
 
 import Product from "./Product";
 import products from "../data/Allproducts.json";
+import TopBanner from './Navigation/TopBanner';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/SearchProducts.scss";
+
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/SearchProducts.scss";
 import loadingIcon from "../assets/images/dashboardloader3.gif";
 import { useToasts } from "react-toast-notifications";
 export default function SearchProducts() {
@@ -52,6 +54,7 @@ export default function SearchProducts() {
   };
   return (
     <div>
+      <TopBanner/>
       <NavBar />
       <HeroImage />
       <div className="row container-search-bar">

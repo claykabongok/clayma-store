@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,41 +9,37 @@ import { faShoppingBasket, faEye } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import {GlobalCartContext} from '../context/CartContext';
-import {  useToasts } from 'react-toast-notifications';
+import { GlobalCartContext } from "../context/CartContext";
+import { useToasts } from "react-toast-notifications";
 
 export default function PopularProducts() {
   const { addToast } = useToasts();
-  const {addItemTocart}= useContext(GlobalCartContext)
-  
-  function  handleAddToCart(data) {
-  
-    
-    const newCartItem={
+  const { addItemTocart } = useContext(GlobalCartContext);
+
+  function handleAddToCart(data) {
+    const newCartItem = {
       productname: data.productname,
       id: data.id,
       price: data.price,
       discount: data.discount,
       color: data.color,
       size: data.size,
-      selectedSize:data.size[0],
+      selectedSize: data.size[0],
       product_status: data.product_status,
       product_stock: data.product_stock,
-      product_selected_qty:1,
+      product_selected_qty: 1,
       product_image: data.product_image,
       brand: data.brand,
-  
-      product_details: data.product_details
 
-
-    }
+      product_details: data.product_details,
+    };
     addItemTocart(newCartItem);
-    addToast(data.productname+" has been saved for later shopping", { appearance: 'success', autoDismiss: true, })
-   
-    
-   
+    addToast(data.productname + " has been saved for later shopping", {
+      appearance: "success",
+      autoDismiss: true,
+    });
   }
-  
+
   const data = PopularProductData.map((product) => {
     return (
       <div className="popular-product" key={product.id}>
@@ -56,9 +52,10 @@ export default function PopularProducts() {
 
           <div className="card-product-extra-info">
             <div className="card-product-icon">
-              <span className="card-product-cart-icon add-to-cart-icon"
-           
-              onClick={ () => handleAddToCart(product)}>
+              <span
+                className="card-product-cart-icon add-to-cart-icon"
+                onClick={() => handleAddToCart(product)}
+              >
                 <FontAwesomeIcon icon={faShoppingBasket} />
               </span>
 
@@ -150,12 +147,10 @@ export default function PopularProducts() {
   return (
     <div className="container-popular-products">
       <h1>Customer Favorites</h1>
-   
+
       <Slider {...settings} className="popular-product-large-screen">
         {data}
       </Slider>
-    
-   
     </div>
   );
 }

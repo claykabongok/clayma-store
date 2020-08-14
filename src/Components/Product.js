@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {GlobalCartContext} from '../context/CartContext';
 import {  useToasts } from 'react-toast-notifications';
 import {v4 as uuidv4} from 'uuid';
+import "../styles/Product.scss";
+
+
 
 export default function Product(props) {
   const { addToast } = useToasts();
@@ -134,7 +137,7 @@ export default function Product(props) {
 
                 <span>
                   <a
-                    href={`/catalog/item/${props.data.id}/${product_name}`}
+                    href={`/catalog/item/${props.data.id}/${product_name}/view`}
                     className="card-product-action-cart-icon"
                   >
                     <FontAwesomeIcon icon={faSearchPlus} />

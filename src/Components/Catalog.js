@@ -7,15 +7,19 @@ import TopBanner from "./Navigation/TopBanner";
 
 import data from "../data/Allproducts.json";
 import ProductDetails from "./ProductDetails";
+import {
+  
+  useParams
+} from "react-router-dom";
 
 export default function Catalog(props) {
-  const product_id = props.match.params.id;
+  const {id,action} =useParams();
 
   let selectedProduct = "";
 
  
-  if (product_id != null) {
-    selectedProduct = data.filter((product) => product.id === product_id);
+  if (id != null) {
+    selectedProduct = data.filter((product) => product.id === id);
   
   }
 
@@ -25,7 +29,7 @@ export default function Catalog(props) {
       <NavBar />
       <HeroImage />
       
-      <ProductDetails product={selectedProduct} key={selectedProduct.id} />
+      <ProductDetails product={selectedProduct} key={selectedProduct.id} action={action}/>
 
       <Footer />
     </div>

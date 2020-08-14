@@ -83,7 +83,12 @@ export default function CartItem(props) {
             </button>
 
             <Link
-              to={`/catalog/item/${props.data.id}/${product_name}`}
+              to={
+                `/catalog/item/${props.data.id}/${product_name}/edit`
+                  
+
+                
+              }
             >
               <button className="btn-cart-item-action-save-edit">Edit</button>
             </Link>
