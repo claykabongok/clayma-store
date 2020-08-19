@@ -1,0 +1,16 @@
+@import "colors";
+@import "product_card";
+@import "product_price_status";
+.cart-items-summary {
+  margin: 20px 0;
+  padding: 20px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: $white;
+  &:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.cart-summary-amount-align-center {
+  text-align: right;
+}

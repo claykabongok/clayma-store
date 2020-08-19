@@ -3,6 +3,7 @@ import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {GlobalCartContext} from '../../context/CartContext';
+import '../../styles/Cartsummary.scss';
 
 export default function CartSummary(props) {
   const {myShoppingCart}=useContext(GlobalCartContext);

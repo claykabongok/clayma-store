@@ -17,7 +17,21 @@ import {  useToasts } from 'react-toast-notifications';
 export default function ProductDetails(props) {
 
   const {action} =props;
+  let product_display_mode="action_view";
 
+  
+   
+  switch(action){
+ 
+    case "edit":
+         product_display_mode="action_edit";
+         break;
+    default: 
+         product_display_mode="action_view";
+
+  }
+
+  
    
  
 
@@ -230,6 +244,14 @@ function handleChangeSize(event) {
             </div>
           </div>
 
+          {/* {
+            product_display_mode ==="action_edit" 
+            ?
+            <h2> Editing product </h2>
+            : 
+            <h2> Viewing product </h2>
+          }
+         */}
           {productStockLevel === 0 ? (
             <h2 className="out-of-stock-notice">
               <FontAwesomeIcon icon={faChartBar} /> Out of Stock
