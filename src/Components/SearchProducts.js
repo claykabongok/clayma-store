@@ -96,6 +96,7 @@ export default function SearchProducts() {
                   <Product data={product} key={product.id} />
                 ))
               : ""}
+            
           </div>
         </div>
       </div>

@@ -67,6 +67,9 @@ export default function UpdateCartItem(props) {
     }
     addItemTocart(newCartItem);
     addToast(data.productname+" has been saved for later shopping", { appearance: 'success', autoDismiss: true, })
+	
+	
+
    
     
    
