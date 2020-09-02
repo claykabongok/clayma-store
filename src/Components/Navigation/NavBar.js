@@ -8,6 +8,7 @@ import {
 import "../../styles/Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GlobalCartContext } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const { myShoppingCart } = useContext(GlobalCartContext);
@@ -37,54 +38,59 @@ export default function NavBar() {
 
             <ul className="navigation-list">
               <li>
-                <a href="/">Home</a>
+                <Link to="/">
+                Home
+                </Link>
+                {/* <a href="/">Home</a>     */}
               </li>
               <li>
-                <a href="/">
-                  Products
-                  <i className="icon ">
+              <Link to="#">
+              Products
+              <i className="icon ">
                     <FontAwesomeIcon icon={faCaretDown} />
                   </i>
-                </a>
+                </Link>
+               
                 <ul className="products-cat">
                   <li>
-                    <a href="/collections">All</a>
+                    <Link to="/collections">All</Link>
+                    
                   </li>
                   <li>
-                    <a href="/collections/men">Men</a>
+                    <Link to="/collections/men">Men</Link>
                   </li>
                   <li>
-                    <a href="/collections/women">Women</a>
+                    <Link to="/collections/women">Women</Link>
                   </li>
                   <li>
-                    <a href="/collections/kids">Kids</a>
+                    <Link to="/collections/kids">Kids</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="/">
+                <Link to="#">
                   Collections
                   <i className="icon ">
                     <FontAwesomeIcon icon={faCaretDown} />
                   </i>
-                </a>
+                </Link>
                 <ul className="products-cat">
                   <li>
-                    <a href="/trend/New">New Arrival</a>
+                    <Link to="/trend/New">New Arrival</Link>
                   </li>
                   <li>
-                    <a href="/trend/Trending">Trending</a>
+                    <Link to="/trend/Trending">Trending</Link>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a href="/search">Search</a>
+                <Link to="/search">Search</Link>
               </li>
 
               <li className="nav-shopping-cart">
-                <a
-                  href="/cart"
+                <Link
+                  to="/cart"
                   className="cart position-relative d-inline-flex"
                 >
                   <FontAwesomeIcon
@@ -94,7 +100,7 @@ export default function NavBar() {
                   <span className="cart-basket d-flex align-items-center justify-content-center ">
                     {myShoppingCart.length}{" "}
                   </span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
